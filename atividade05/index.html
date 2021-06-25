@@ -9,28 +9,19 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Tarefas a fazer (TO DO APP)</h1>
-      <p>Adicione texto dentro da caixa de testo para inserir novas atividades</p>
-      <p>Clique no item para marcar a atividade como completa</p>
-      <p>Clique no "X" da atividade para remover o item</p>
-    </div>
-    <div class="content">
-      <div class="input">
-        <input type="text" placeholder="Nova tarefa...">
-        <button type="submit">Adicionar</button>
+  <div class="content"> 
+      <div class="input"> 
+        <input type="text" id="input-add" placeholder="Nova tarefa..."/>
+        <button type="submit" onclick="adicionar()" id="button-add">Adicionar</button>
       </div>
 
-      <div class="input">
-        <div class="todo__list" id='todoList'>
-         teste
+      <div class="lista">
+        <div class="todo__list">
+          <ul id='todoList'></ul>
         </div>
       </div>
-
-      
-
-    </div>
   </div>
+  
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>
